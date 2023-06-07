@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Verificar si el usuario ha iniciado sesión
+if (!isset($_SESSION['usuario'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,8 +15,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenido a Age of Empires</title>
   <link rel="stylesheet" href="css/estilos.css">
-  <link rel="stylesheet" href="css/all.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-MKiSva7JZGVjYOJ+LDqdd3/3nyrG+UO4a0NSIDp2wadk5zPBv3xOiEKjl4RlWg2l8CgUsEAt+VfOsRoOFTav9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
@@ -18,11 +26,14 @@
   </header>
   <nav>
     <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.php">Inicio</a></li>
       <li><a href="aoe1.html">AOE1</a></li>
       <li><a href="aoe2.html">AOE2</a></li>
       <li><a href="aoe3.html">AOE3</a></li>
       <li><a href="aoe4.html">AOE4</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><?php echo "Has iniciado sesion como ".$_SESSION['usuario']?></li>
+      <li><a href="logout.php">Cerrar sesión</a></li>
     </ul>
   </nav>
   <h1 class="welcome">Bienvenido a Age of Empires</h1>
@@ -86,7 +97,6 @@
   <div>
 </section>
 </div>
-
 
 
 
