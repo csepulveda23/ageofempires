@@ -9,6 +9,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-MKiSva7JZGVjYOJ+LDqdd3/3nyrG+UO4a0NSIDp2wadk5zPBv3xOiEKjl4RlWg2l8CgUsEAt+VfOsRoOFTav9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <header>
+  <div class="header__logo">
+	    	<a class="header__logo__link" href="https://www.ageofempires.com">
+				<img src="https://www.ageofempires.com/wp-content/themes/ageOfEmpires/dist/images/logos/franchise-logo-horiz.webp" alt="Age of Empires" width="365" height="44">
+			</a>
+		</div>
+  </header>
   <nav>
     <ul>
       <li><a href="index.html">Inicio</a></li>
