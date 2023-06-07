@@ -45,37 +45,51 @@
 
   <p>Age of Empires es una serie de juegos de estrategia en tiempo real (RTS) que te permite construir y desarrollar una civilización a lo largo de diferentes épocas de la historia.</p>
   <h2>Juegos principales</h2>
+<div>
+  <section class="hero-section">
+  <div class="card-grid">
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(img/aoe1.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading"></h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(img/aoe2.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading"></h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(img/aoe3.jpg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading"></h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(img/aoe4.jpeg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading"></h3>
+      </div>
+    </a>
+    <a class="card" href="#">
+      <div class="card__background" style="background-image: url(img/aom.jpeg)"></div>
+      <div class="card__content">
+        <p class="card__category"></p>
+        <h3 class="card__heading"></h3>
+      </div>
+    </a>
+  <div>
+</section>
+</div>
 
-<div class="game-icons">
-  <a href="aoe1.html">
-    <i class="fas fa-campground"></i>
-<span>Age of Empires 1</span>
-</a>
-  <a href="aoe2.html">
-  <i class="fab fa-fort-awesome"></i>
-  <span>Age of Empires 2</span>
-</a>
-  <a href="aoe3.html">
-  <i class="fas fa-anchor"></i>
-  <span>Age of Empires 3</span>
-</a>
-  <a href="aoe4.html">
-  <i class="fas fa-crown"></i>
-  <span>Age of Empires 4</span>
-</a>
-</div>
-  <p>Selecciona una versión para obtener más información.</p>
-  <h2>Características comunes</h2>
-<div class="centered-list">
-  <ul>
-    <li>Construcción de edificios y mejoras.</li>
-    <li>Recolección de recursos como madera, comida y oro.</li>
-    <li>Entrenamiento de unidades militares.</li>
-    <li>Investigación de tecnologías.</li>
-    <li>Exploración del mapa y conquista de territorios.</li>
-    <li>Modos de juego para un solo jugador y multijugador.</li>
-  </ul>
-</div>
+
+
+
   <h2>Popularidad</h2>
   <p>La franquicia de Age of Empires ha sido muy popular desde su lanzamiento inicial en 1997.<br> Ha ganado una gran base de fanáticos y ha sido reconocida por su jugabilidad estratégica y su enfoque histórico.</p>
   <h2>Civilizaciones</h2>
