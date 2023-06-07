@@ -10,14 +10,14 @@
 </head>
 <body>
   <header>
-  <div class="header__logo">
+  <div class="header_logo">
 	    	<a class="header__logo__link" href="https://www.ageofempires.com">
 				<img src="https://www.ageofempires.com/wp-content/themes/ageOfEmpires/dist/images/logos/franchise-logo-horiz.webp" alt="Age of Empires" width="365" height="44">
 			</a>
 		</div>
   </header>
   <nav>
-    <ul>
+    <ul class="menu">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="aoe1.html">AOE1</a></li>
       <li><a href="aoe2.html">AOE2</a></li>
@@ -25,9 +25,27 @@
       <li><a href="aoe4.html">AOE4</a></li>
     </ul>
   </nav>
-  <h1>Bienvenido a Age of Empires</h1>
+  <h1 class="welcome">Bienvenido a Age of Empires</h1>
+
+
+  <div class="image-slider">
+  <div class="image-container">
+    <img src="img/wallpaper1.jpg" alt="Imagen 1">
+    <img src="img/wallpaper4.jpg" alt="Imagen 4">
+    <img src="img/wallpaper2.jpg" alt="Imagen 2">
+    <img src="img/wallpaper5.png" alt="Imagen 5">
+    <img src="img/wallpaper3.jpg" alt="Imagen 3">
+    <img src="img/wallpaper6.jpg" alt="Imagen 6">
+    <img src="img/wallpaper4.jpg" alt="Imagen 4">
+    <img src="img/wallpaper2.jpg" alt="Imagen 2">
+    <img src="img/wallpaper1.jpg" alt="Imagen 1">
+  </div>
+</div>
+
+
   <p>Age of Empires es una serie de juegos de estrategia en tiempo real (RTS) que te permite construir y desarrollar una civilización a lo largo de diferentes épocas de la historia.</p>
   <h2>Juegos principales</h2>
+
 <div class="game-icons">
   <a href="aoe1.html">
     <i class="fas fa-campground"></i>

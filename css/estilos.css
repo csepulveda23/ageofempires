@@ -1,15 +1,53 @@
 /* Estilos generales */
 body {
-  background-color: #f3f0e8;
-  color: #000;
+  background-color: #181c29;
+  color: #ffdf91;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+
+h1.welcome {
+  font-family: 'Times New Roman', Times, serif, bold;
+  font-size: 42px;
+
+}
+
+div.header_logo {
+  
+  border-width: 1 1 1px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg,rgba(184,134,45,0),#b8862d,#ffdf91,#b8862d,rgba(184,134,45,0));
+  border-style: solid;
+  position: relative;
+  z-index: 500;
+  background-color: black;
+  color: #cda351;
+  padding: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+}
+
 /* Estilos de la barra de navegación */
 nav {
-  background-color: #4a280b;
+  background: linear-gradient(90deg,#181c29,#394766 40%,#181c29);
+  border-width: 1px 0;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg,rgba(184,134,45,0),#b8862d,#ffdf91,#b8862d,rgba(184,134,45,0));
+  border-style: solid;
+  position: relative;
+  width: 100%;
+  z-index: 400;
+  display: flex;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height:2rem;
 }
 
 nav ul {
@@ -24,16 +62,117 @@ nav li {
   text-align: center;
 }
 
-/* Estilos de los enlaces */
+nav a {
+  font-size: 1rem;
+  white-space: nowrap;
+  padding: 1;
+  font-family: maiola,serif;
+  font-weight: 400;
+  color: #ffdf91;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline;
+  justify-content: center; /* Centrado horizontal */
+  align-items: center; /* Centrado vertical */
+  height: 100%;
+  width: 100%;
+}
+
 a {
   color: #fff;
   text-decoration: none;
   padding: 5px 10px;
+  cursor: pointer;
+  
 }
 
-a:hover {
-  background-color: #783f0b;
-}
+nav a:hover {
+    transition: background-color 0.3s ease;
+    background-color: #783f0b;
+    color: #fff;
+  }
+  
+  /* Inicia slider */
+  .image-slider {
+    overflow: hidden; 
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    max-height: 350px;
+    max-height: 350px;
+    justify-content: center; 
+    align-items: center; 
+    border-width: 5px 0;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg,rgba(184,134,45,0),#b8862d,#ffdf91,#b8862d,rgba(184,134,45,0));
+    border-style: solid;
+   
+  }
+  
+  .image-container {
+  
+    justify-content: center; 
+    align-items: center; 
+    display: inline-flex;
+    -moz-animation: slider 5s infinite ;
+    -webkit-animation: slider 5s infinite ;
+    animation: slider 30s infinite ;
+    height: 100%;
+    width: auto;
+    
+  }
+  
+  .image-container img {
+    width: 100%; 
+    height: auto;
+    max-height: 350px;
+    max-height: 350px;
+    object-fit: contain;
+    object-position: center;
+    
+  }
+
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @-moz-keyframes slider {
+    0% {
+      -moz-transform: translateX(0);
+    }
+    50% {
+      -moz-transform: translateX(-100%);
+    }
+    100% {
+      -moz-transform: translateX(0);
+    }
+  }
+  
+  @-webkit-keyframes slider {
+    0% {
+      -webkit-transform: translateX(0);
+    }
+    50% {
+      -webkit-transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+    }
+  }
+  
+  
+  /* Termina slider */
+
 
 /* Estilos de encabezados y párrafos */
 h1, p {
@@ -42,7 +181,7 @@ h1, p {
 }
 
 h1 {
-  color: #783f0b;
+  color: #ffdf91
   text-align: center;
 }
 
@@ -60,14 +199,12 @@ p {
 
 /* Estilos del footer */
 footer {
-  background-color: #783f0b;
+  background-color: black;
   color: #fff;
   text-align: center;
   padding: 10px;
   position: relative;
-width: auto;
-}
-
+  width: auto;
 }
 
 footer p {
