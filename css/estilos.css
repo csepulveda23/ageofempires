@@ -175,11 +175,11 @@ nav a:hover {
 /* Estilos de encabezados y párrafos */
 h1, p {
   text-align: center;
-  padding: 20px;
+  padding: 5px;
 }
 
 h1 {
-  color: #ffdf91
+  color: #ffdf91;
   text-align: center;
 }
 
@@ -191,11 +191,9 @@ h2 {
 p {
   font-size: 18px;
   margin-top: 5px;
-    padding-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
 }
-
-/* Estilo imagenes del juego */
-
 
 /* Estilos del footer */
 footer {
@@ -232,10 +230,53 @@ footer p {
 }
 
 /* Estilos de listas centradas */
+
+.details {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: -10px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+  .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    position: relative;
+  }
+  .div2 img{
+    width: 100%;
+    max-width: 300px;
+  }
+  .div2 img::after {
+    width: 100%;
+    position: absolute;
+    content: "";
+    width: 100%;
+    /* El height controla el alto del degradado */
+    height: 100%;
+    left: 0;
+    /* Puedes cambiar la posición del degrado desde aquí */
+    bottom: 0;
+    /* Si cambias la posición, reemplaza también la dirección en el gradiente */
+    background-image: linear-gradient(to right, #1746a2, transparent);
+  }
+  
+  .div3 { 
+    grid-area: 2 / 1 / 3 / 2; 
+  }
+  .div4 { 
+    grid-area: 2 / 2 / 3 / 3;
+   }
+
 .centered-list {
   text-align: center;
   list-style-position: inside;
 }
+
 
 /* Imagenes de los juegos */
 
@@ -247,13 +288,9 @@ footer p {
   --spacing-m: 16px;
   --spacing-l: 24px;
   --spacing-xl: 32px;
-  --spacing-xxl: 64px;
+  --spacing-xxl: 10px;
   --width-container: 80%;
 }
-
-
-
-
 
 .hero-section{
   align-items: flex-start;
@@ -292,7 +329,7 @@ footer p {
 
 .card:before{
   content: '';
-  display: block;
+  display: flex;
   padding-bottom: 150%;
   width: 100%;
 }

@@ -19,8 +19,8 @@ if (!isset($_SESSION['usuario'])) {
 <body>
   <header>
   <div class="header_logo">
-	    	<a class="header__logo__link" href="https://www.ageofempires.com">
-				<img src="https://www.ageofempires.com/wp-content/themes/ageOfEmpires/dist/images/logos/franchise-logo-horiz.webp" alt="Age of Empires" width="365" height="44">
+	    	<a class="header__logo_link" href="index.php">
+				<img src="img/logo.webp" alt="Age of Empires" width="365" height="44">
 			</a>
 		</div>
   </header>
@@ -38,7 +38,6 @@ if (!isset($_SESSION['usuario'])) {
   </nav>
   <h1 class="welcome">Bienvenido a Age of Empires</h1>
 
-
   <div class="image-slider">
   <div class="image-container">
     <img src="img/wallpaper1.jpg" alt="Imagen 1">
@@ -52,10 +51,10 @@ if (!isset($_SESSION['usuario'])) {
     <img src="img/wallpaper1.jpg" alt="Imagen 1">
   </div>
 </div>
-
-
   <p>Age of Empires es una serie de juegos de estrategia en tiempo real (RTS) que te permite construir y desarrollar una civilización a lo largo de diferentes épocas de la historia.</p>
   <h2>Juegos principales</h2>
+
+  <!-- Imagenes de cada juego con link -->
 <div>
   <section class="hero-section">
   <div class="card-grid">
@@ -97,22 +96,30 @@ if (!isset($_SESSION['usuario'])) {
   <div>
 </section>
 </div>
-
-
-
-  <h2>Popularidad</h2>
-  <p>La franquicia de Age of Empires ha sido muy popular desde su lanzamiento inicial en 1997.<br> Ha ganado una gran base de fanáticos y ha sido reconocida por su jugabilidad estratégica y su enfoque histórico.</p>
-  <h2>Civilizaciones</h2>
-  <p>Cada juego de Age of Empires presenta una variedad de civilizaciones jugables con características únicas, incluyendo unidades especiales, tecnologías y bonificaciones. Algunas de las civilizaciones destacadas incluyen:</p>
-<ul class="centered-list">
-  <li>Egipcios</li>
-  <li>Griegos</li>
-  <li>Británicos</li>
-  <li>Chinos</li>
-  <li>Aztecas</li>
-  <li>Japoneses</li>
-  <li>Entre muchas otras...</li>
-</ul>
+<!-- Detalles -->
+<div class="details">
+<div class="div1">
+      <h2>Popularidad</h2>
+        <p>La franquicia Age of Empires ha sido muy popular desde su lanzamiento inicial en 1997. Ha ganado una gran base de fanáticos y ha sido reconocida por su jugabilidad estratégica y su enfoque histórico.</p>
+</div>
+<div class="div2">
+  <img src="img/aoe1.jpg" alt=""> </div>
+<div class="div3" style="background-image: url(img/aoe1.jpeg)"> </div>
+<div class="div4">
+    <h2>Civilizaciones</h2>
+        <p>Cada juego de Age of Empires presenta una variedad de civilizaciones jugables con características únicas, incluyendo unidades especiales, tecnologías y bonificaciones. Algunas de las civilizaciones destacadas incluyen:</p>
+        <ul class="centered-list">
+          <li>Egipcios</li>
+          <li>Griegos</li>
+          <li>Británicos</li>
+          <li>Chinos</li>
+          <li>Aztecas</li>
+          <li>Japoneses</li>
+          <li>Entre muchas otras...</li>
+        </ul>
+</div>
+</div>
+  
   <footer class="small-footer">
     <p>&copy; 2023 - Creado por Simón y Claudio</p>
   </footer>
