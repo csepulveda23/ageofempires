@@ -87,7 +87,7 @@ if (!isset($_SESSION['usuario'])) {
       </div>
     </a>
     <a class="card" href="#">
-      <div class="card__background" style="background-image: url(img/aom.jpeg)"></div>
+      <div class="card__background" style="background-image: url(img/aom.png)"></div>
       <div class="card__content">
         <p class="card__category"></p>
         <h3 class="card__heading"></h3>
