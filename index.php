@@ -5,9 +5,25 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     header('Location: login.php');
     exit();
+} 
+else {
+//Visitas de sitio
+  if(!isset($_SESSION['contar'])){
+    $_SESSION['contar']=1;
+  }
+  else {
+    $_SESSION['contar']++;
+  }
+}  
+//Iidoma del usuario
+if (!isset($_COOKIE['idiomaUsuario'])) {//Si no existe, se determina como pagina la destianda a elegir el ediioma.
+  $pagina = "pedirIdioma.html";//HAY QUE CAMBIAR ESTO, VER SI SE AGREGAL LOGIN O AL INDEX.
+} elseif ($_COOKIE['idiomaUsuario'] == "sp"){//Si existe la cookie y el valor de la variable es "sp" se irá a la pagina en español.
+  $pagina = "spanish.html";//FALTA CREAR ESTA PAGINA
+} else{
+  $pagina = "english.html";//FALTA CREAR ESTA PAGINA
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,6 +31,11 @@ if (!isset($_SESSION['usuario'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bienvenido a Age of Empires</title>
   <link rel="stylesheet" href="css/estilos.css">
+  <script language= "javascript" type="text/javascript">
+                function enviarIdioma (idioma){
+                    location.href = "grabarCookie.php?idiomaUsuario=" + idioma;
+                }
+        </script>
 </head>
 <body>
   <header>
@@ -28,10 +49,8 @@ if (!isset($_SESSION['usuario'])) {
     <ul class="menu">
       <li><a href="index.php">Inicio</a></li>
       <li><a href="aoe1.html">AOE1</a></li>
-      <li><a href="aoe2.html">AOE2</a></li>
-      <li><a href="aoe3.html">AOE3</a></li>
-      <li><a href="aoe4.html">AOE4</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="contacto.php">Contacto</a></li>
+      <li><?php echo "Visitas ".$_SESSION['contar']?></li>
       <li><?php echo "Has iniciado sesion como ".$_SESSION['usuario']?></li>
       <li><a href="logout.php">Cerrar sesión</a></li>
     </ul>
@@ -122,6 +141,10 @@ if (!isset($_SESSION['usuario'])) {
   
   <footer class="small-footer">
     <p>&copy; 2023 - Creado por Simón y Claudio</p>
+    <a href ="javascript:enviarIdioma('sp');">Ver la version del sitio en Español</a>
+    <br>
+    <a href ="javascript:enviarIdioma('en');">Ver la version del sitio en Inglés</a>
+    <a href ="borrarCookie.php">Borrar Cookie</a>
   </footer>
 </body>
 </html>

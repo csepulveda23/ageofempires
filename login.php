@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mensajeError = 'Usuario o contraseña incorrectos';
     }
 }
+
+
 ?>
 
 <!DOCTYPE html>
