@@ -11,7 +11,7 @@
 <body>
   <nav>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.php">Inicio</a></li>
       <li><a href="aoe1.html">AOE1</a></li>
       <li><a href="aoe2.html">AOE2</a></li>
       <li><a href="aoe3.html">AOE3</a></li>

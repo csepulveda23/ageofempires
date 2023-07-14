@@ -77,35 +77,35 @@ if (!isset($_COOKIE['idiomaUsuario'])) {//Si no existe, se determina como pagina
 <div>
   <section class="hero-section">
   <div class="card-grid">
-    <a class="card" href="#">
+    <a class="card" href="aoe1.html">
       <div class="card__background" style="background-image: url(img/aoe1.jpg)"></div>
       <div class="card__content">
         <p class="card__category"></p>
         <h3 class="card__heading"></h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="aoe2.html">
       <div class="card__background" style="background-image: url(img/aoe2.jpg)"></div>
       <div class="card__content">
         <p class="card__category"></p>
         <h3 class="card__heading"></h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="aoe3.html">
       <div class="card__background" style="background-image: url(img/aoe3.jpg)"></div>
       <div class="card__content">
         <p class="card__category"></p>
         <h3 class="card__heading"></h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="aoe4.html">
       <div class="card__background" style="background-image: url(img/aoe4.jpeg)"></div>
       <div class="card__content">
         <p class="card__category"></p>
         <h3 class="card__heading"></h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="aoem  .html">
       <div class="card__background" style="background-image: url(img/aom.png)"></div>
       <div class="card__content">
         <p class="card__category"></p>
